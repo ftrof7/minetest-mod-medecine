@@ -1,0 +1,6 @@
+# textdomain: medecine
+-!- You have full healts and cannot use medecine.=-!- У вас полное здоровье, и вы не можете использовать лекарства.
+Medecine bag=Аптечка
+Syringe empty=Шприц пустой
+Syringe full=Шприц полный
+Syringe with blood=Шприц с кровью
