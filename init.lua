@@ -6,7 +6,7 @@ minetest.register_craftitem("medecine:bag", {
     on_use = function(itemstack, player)
         local inv = player:get_inventory()
         if minetest.settings:get_bool("enable_damage") then
-            if player:get_hp() < 20 or player:get_hp() > 20 then
+            if player:get_hp() < player:get_properties().hp_max then
                 player:set_hp(player:get_hp() + 10)
                 inv:remove_item("main", "medecine:bag")
             else
@@ -23,7 +23,7 @@ minetest.register_craftitem("medecine:syringe_empty", {
     on_use = function(itemstack, player)
         local inv = player:get_inventory()
         if minetest.settings:get_bool("enable_damage") then
-            if player:get_hp() > 0 then
+            if player:get_hp() > 2 then
                 player:set_hp(player:get_hp() - 2)
                 inv:remove_item("main", "medecine:syringe_empty")
                 inv:add_item("main", "medecine:syringe_blood")
@@ -43,7 +43,7 @@ minetest.register_craftitem("medecine:syringe_full", {
     on_use = function(itemstack, player)
         local inv = player:get_inventory()
         if minetest.settings:get_bool("enable_damage") then
-            if player:get_hp() < 20 or player:get_hp() > 20 then
+            if player:get_hp() < player:get_properties().hp_max then
                 player:set_hp(player:get_hp() + 5)
                 inv:remove_item("main", "medecine:syringe_full")
                 inv:add_item("main", "medecine:syringe_empty")
