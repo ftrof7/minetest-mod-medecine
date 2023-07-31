@@ -1,5 +1,5 @@
 # textdomain: medecine
--!- You have full healts and cannot use medecine.
+-!- You have full healts and cannot use medecine.=
 Medecine bag=
 Syringe empty=
 Syringe full=
