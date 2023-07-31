@@ -1,7 +1,6 @@
 # Medecine
-Minetest mod Medecine 2023 (C) to ftrof
+Minetest mod Medecine
 
 
 - Add items for heal
-- Example for adding hp
 - Funny mod
